@@ -13,6 +13,14 @@
 | **Website** | https://github.com/TechieGoku2623/dicom-differential-privacy-matrix |
 | **Topics** | `python` `asyncio` `healthcare` `dicom` `differential-privacy` `hipaa` `medical-imaging` |
 
+## The problem this solves
+
+An imaging header can re-identify a person after the obvious patient ID is gone. Exact age and a full postal code are still identifiers.
+
+DICOM Differential Privacy Matrix releases a tag set that is safe to leave the imaging boundary. It suppresses direct identifiers, bins age, truncates the postal code, adds Laplace noise to the numeric tags that remain, and keeps a running epsilon so the privacy budget is visible on every batch. A missing slice is recorded as a dropout. Released tags are published on `imaging.tags.anonymized`. The engine runs on synthetic tags, so the repository never contains real patient data.
+
+The transforms follow the same ideas as HIPAA Safe Harbor: remove, generalize, noise what remains, and account for the spend.
+
 ## Walkthrough
 
 ### How it works
