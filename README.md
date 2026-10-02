@@ -2,6 +2,11 @@
 
 A high-throughput, low-latency asynchronous engine engineered to resolve identifier leakage in synthetic numeric DICOM tag matrices by dropping direct-identifier tags, generalizing age and postal values, and adding Laplace noise under sequential epsilon accounting.
 
+Website: https://github.com/TechieGoku2623/dicom-differential-privacy-matrix
+
+Topics: `python` `asyncio` `healthcare` `dicom` `differential-privacy` `hipaa` `medical-imaging`
+
+
 ## 🏗️ Systems Architecture & Event Topology
 
 `DicomDifferentialPrivacyMatrix` accepts packed numeric tags only: a tag id integer, a float, a slice index, a series number, and a missing-slice flag. There is no patient-name field and no medical-record-number string. `pack_tag` / `unpack_tag` are the struct boundary. `run` is the coroutine that releases a study.
@@ -31,6 +36,8 @@ release dict: suppressed, generalized, noised, epsilon_spent, dropout
 ```
 
 ## 📊 Core Visual Walkthrough & Engine Pipeline Flow
+
+![Terminal walkthrough](docs/assets/terminal-walkthrough.gif)
 
 ```
 record

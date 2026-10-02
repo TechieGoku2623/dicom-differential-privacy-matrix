@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "dicom-differential-privacy-matrix"
 version = "1.0.0"
-description = "DICOM Differential Privacy Matrix"
+description = "Differential-privacy release path for synthetic DICOM numeric tags, with Laplace noise and HIPAA Safe Harbor generalization."
 readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "MIT" }
