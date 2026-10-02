@@ -13,6 +13,14 @@
 | **Website** | https://github.com/TechieGoku2623/dicom-differential-privacy-matrix |
 | **Topics** | `python` `asyncio` `healthcare` `dicom` `differential-privacy` `hipaa` `medical-imaging` |
 
+## Watch the demo
+
+<p align="center">
+  <img src="docs/demo.gif" alt="DICOM Differential Privacy Matrix dashboard walkthrough" width="920"/>
+</p>
+
+Play the video: [docs/watch.html](docs/watch.html)
+
 ## The problem this solves
 
 An imaging header can re-identify a person after the obvious patient ID is gone. Exact age and a full postal code are still identifiers.
